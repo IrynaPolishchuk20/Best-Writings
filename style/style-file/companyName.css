@@ -1,0 +1,30 @@
+.companyName{
+    background-image: url(../../images/main_bg_img_heder.png);
+    height: 588px;
+}
+
+.companyName .logo{
+    display: flex;
+    margin-top: 20px;
+}
+
+.companyName .logo img{
+    height: 60px;
+}
+
+.companyName .text h3{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    font-family: Roboto_Regular;
+}
+
+.companyName .text ul li{
+    font-size: 18px;
+    line-height: 33px;
+    color: #000000;
+    font-family: Arial Narrow;
+}
+
+
