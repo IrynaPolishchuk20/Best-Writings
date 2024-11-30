@@ -1,0 +1,71 @@
+.get_a_price{
+    background: #075da2; 
+    background-image: url(../../images/Bg1.svg);
+    margin-top: 15px;
+    height: 295px;  
+}
+
+.get_a_price .get{
+    margin-top: 10px;
+    height: 50px;
+    width: 1141px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
+    background-color: #caddea;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.get_a_price .get h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #1b7fd0;
+    font-weight: 600;
+    font-family: Roboto_Regular;
+    text-align: left;
+    
+}
+.get_a_price .get img{
+    height: 50px;
+    
+}
+
+.get_a_price .get h3{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #dd0000;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    float: left;
+    text-align: left;
+}
+
+.get_a_price .get p{
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #075da2;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    float: left;
+}
+
+.get_a_price .content1 h4{
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin-bottom: 2px;
+}
+
+.get_a_price .content1 select{
+    width: 300px;
+    height: 30px;
+}
+
+.get_a_price .content1{
+    display: flex;
+    justify-content: space-around;
+}
