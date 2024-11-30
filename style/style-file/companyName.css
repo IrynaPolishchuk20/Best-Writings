@@ -1,6 +1,6 @@
 .companyName{
     background-image: url(../../images/main_bg_img_heder.png);
-    height: 588px;
+    height: 600px;
 }
 
 .companyName .logo{
@@ -12,19 +12,51 @@
     height: 60px;
 }
 
+.companyName .things{
+    width: 600px;
+    height: 80px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: #caddea;
+    text-align: center;
+}
+
 .companyName .text h3{
     font-size: 22px;
     text-transform: uppercase;
     color: #000000;
     font-weight: 500;
     font-family: Roboto_Regular;
+    margin-left: 30px;
 }
 
 .companyName .text ul li{
     font-size: 18px;
     line-height: 33px;
     color: #000000;
-    font-family: Arial Narrow;
+    font-family: Arial;
+}
+
+.companyName li{
+    color: #1b7fd0;
+}
+
+.companyName button{
+    height: 45px;
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 20px;
+    background: none;
+    border-color: #013056;
+    font-size: 18px;
+    line-height: 42px;
+    color: #1b7fd0;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    text-align: center;
+}
+
+.companyName button:hover{
+    cursor: pointer;
 }
 
 
