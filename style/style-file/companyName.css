@@ -5,7 +5,8 @@
 
 .companyName .logo{
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .companyName .logo img{
@@ -13,20 +14,41 @@
 }
 
 .companyName .things{
-    width: 600px;
-    height: 80px;
-    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    background-color: #caddea;
-    text-align: center;
+    height: 50px;
+    background: var(--color_btn_read_more_hover);
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
+}
+
+.companyName .things ::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-style: solid;
+    border-width: 40px 40px 0 0;
+    border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
 }
 
 .companyName .text h3{
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #000000;
+    margin-top: 40px;
+    margin-left: 55px;
+    color: var(--color_p_text);
     font-weight: 500;
-    font-family: Roboto_Regular;
-    margin-left: 30px;
+    font-family: Roboto_Bold;
+}
+
+.companyName ul li{
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color_p_text);
+    font-family: Roboto_Medium;
+    position: relative;
 }
 
 .companyName .text ul li{
@@ -36,8 +58,22 @@
     font-family: Arial;
 }
 
-.companyName li{
-    color: #1b7fd0;
+.companyName ul li{
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color_p_text);
+    font-family: Roboto_Medium;
+    position: relative;
+}
+
+.companyName ul li::before {
+    content: '•';
+    font-size: 35px;
+    color: var(--color_h3);
+    position: absolute;
+    left: -20px;
+    top: 2px;
 }
 
 .companyName button{
@@ -47,6 +83,7 @@
     margin-left: 20px;
     background: none;
     border-color: #1b7fd0;
+    border-radius: 5px;
     font-size: 18px;
     line-height: 42px;
     color: #1b7fd0;
@@ -57,6 +94,9 @@
 
 .companyName button:hover{
     cursor: pointer;
+    background-color: var(--color_btn_read_more_hover);
+    transform: scale(1.05);
+    transition: transform 2s ease;
 }
 
 
