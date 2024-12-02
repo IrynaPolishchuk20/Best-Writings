@@ -1,28 +1,29 @@
+.company{
+    background-color: #e6edf4;
+}
+
 .companyName{
     background-image: url(../../images/main_bg_img_heder.png);
-    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
-.companyName .logo{
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.companyName .logo a img{
+    margin: 10px 0px;
 }
 
-.companyName .logo img{
-    height: 60px;
-}
 
 .companyName .things{
-    height: 50px;
+    height: 65px;
+    width: 600px;
     background: var(--color_btn_read_more_hover);
-    width: 650px;
+    filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
-}
+    }
 
 .companyName .things ::after {
     content: '';
@@ -35,11 +36,7 @@
 }
 
 .companyName .text h3{
-    margin-top: 40px;
-    margin-left: 55px;
-    color: var(--color_p_text);
-    font-weight: 500;
-    font-family: Roboto_Bold;
+    margin: 35px 0px 0px ;
 }
 
 .companyName ul li{
@@ -54,34 +51,30 @@
 .companyName .text ul li{
     font-size: 18px;
     line-height: 33px;
-    color: #000000;
+    color: var(--color_p_text);
     font-family: Arial;
 }
 
 
-.companyName ul li::before {
-    content: '•';
-    font-size: 35px;
-    color: var(--color_h3);
-    position: absolute;
-    left: -20px;
-    top: 2px;
+.companyName ul li::marker {
+    font-size: 25px;
+    color: var(--color_main_1);
 }
 
 .companyName button{
-    height: 45px;
+    height: 35px;
     width: 250px;
     margin-top: 15px;
     margin-left: 20px;
     background: none;
-    border-color: #1b7fd0;
+    border-color:  var(--color_main_1);
     border-radius: 5px;
     font-size: 18px;
     line-height: 42px;
-    color: #1b7fd0;
+    color: var(--color_main_1);
     font-weight: 400;
     font-family: Roboto_Regular;
-    text-align: center;
+
 }
 
 .companyName button:hover{
@@ -92,3 +85,8 @@
 }
 
 
+.companyName .left{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

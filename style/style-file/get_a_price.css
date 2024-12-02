@@ -153,6 +153,7 @@
     width: 310px;
     height: 35px;
     background: var(--color_btn_order_now);
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,8 +162,8 @@
 .get_a_price .order::after {
     content: '';
     position: absolute;
-    bottom: 40px;
-    left: 1371px;
+    bottom: -15px;
+    left: 0px;
     border-style: solid;
     border-width: 20px 20px 0 0;
     border-color: var(--color_btn_order_now) transparent transparent transparent;
