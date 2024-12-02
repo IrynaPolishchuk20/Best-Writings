@@ -1,6 +1,6 @@
 .companyName{
     background-image: url(../../images/main_bg_img_heder.png);
-    height: 650px;
+    height: 600px;
 }
 
 .companyName .logo{
@@ -58,14 +58,6 @@
     font-family: Arial;
 }
 
-.companyName ul li{
-    margin-left: 20px;
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--color_p_text);
-    font-family: Roboto_Medium;
-    position: relative;
-}
 
 .companyName ul li::before {
     content: '•';
@@ -96,7 +88,7 @@
     cursor: pointer;
     background-color: var(--color_btn_read_more_hover);
     transform: scale(1.05);
-    transition: transform 2s ease;
+    transition: transform 1s ease;
 }
 
 
