@@ -1,0 +1,119 @@
+.essay{
+    background: url(../../images/Bg1-1.svg);
+    height: 310px;
+}
+
+.essay .essay_writing{
+    margin-top: 10px;
+    height: 65px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
+    background-color: var(--color_btn_read_more_hover);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.essay .essay_writing::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 0;
+    border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
+}
+
+.element1,.element2, 
+.element3, .element4{
+    height: 545px;
+}
+.elements img{
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+}
+
+.essay .elements h4{
+    text-align: center;
+}
+
+.essay .elements p{
+    font-size: 16px;
+    text-align: justify;
+    padding: 2px;
+}
+
+.essay .elements ul li{
+    font-family: Arial; 
+    font-size: 16px; 
+    color: var(--color_p_text);
+    margin-left: -20px;
+}
+
+.essay .elements ul li::marker{
+    font-size: 25px;
+}
+
+.essay .elements .element1,
+.essay .elements .element2,
+.essay .elements .element3,
+.essay .elements .element4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.essay .elements .element1 button,
+.essay .elements .element2 button,
+.essay .elements .element3 button,
+.essay .elements .element4 button{
+    background: var(--color_btn_read_more);
+    border: var(--color_btn_read_more);
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    text-align: center;
+}
+.essay .elements .element1 button:hover,
+.essay .elements .element2 button:hover,
+.essay .elements .element3 button:hover,
+.essay .elements .element4 button:hover{
+    background: var(--color_btn_read_more_hover);
+    cursor: pointer;
+}
+
+.essay .element1 .btn,
+.essay .element2 .btn,
+.essay .element3 .btn,
+.essay .element4 .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.essay .elements .element1:hover,
+.essay .elements .element2:hover,
+.essay .elements .element3:hover,
+.essay .elements .element4:hover{
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: #ffffff;
+    position: relative;
+}
+.essay .elements .element1::after,
+.essay .elements .element2::after,
+.essay .elements .element3::after,
+.essay .elements .element4::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 0;
+    border-color: #ffffff transparent transparent transparent;
+}

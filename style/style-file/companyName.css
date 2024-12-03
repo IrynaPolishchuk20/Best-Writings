@@ -1,16 +1,22 @@
 .company{
     background-color: #e6edf4;
-}
-
-.companyName{
     background-image: url(../../images/main_bg_img_heder.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right;
 }
 
-.companyName .logo a img{
-    margin: 10px 0px;
+@media screen and (min-width: 1200px){
+    .company{
+        background: none;
+    }
+
+    .companyName{
+        background-image: url(../../images/main_bg_img_heder.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
 }
 
 
@@ -31,12 +37,12 @@
     bottom: -30px;
     left: 0;
     border-style: solid;
-    border-width: 40px 40px 0 0;
+    border-width: 30px 30px 0 0;
     border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
 }
 
 .companyName .text h3{
-    margin: 35px 0px 0px ;
+    margin: 35px 0px 0px;
 }
 
 .companyName ul li{
@@ -49,10 +55,8 @@
 }
 
 .companyName .text ul li{
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 25px;;
     color: var(--color_p_text);
-    font-family: Arial;
 }
 
 
@@ -62,10 +66,9 @@
 }
 
 .companyName button{
-    height: 35px;
+    height: 45px;
     width: 250px;
-    margin-top: 15px;
-    margin-left: 20px;
+    margin: 15px 0px 10px 20px;
     background: none;
     border-color:  var(--color_main_1);
     border-radius: 5px;

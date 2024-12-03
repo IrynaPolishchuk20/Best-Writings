@@ -20,13 +20,13 @@
     padding: 0px 20px;
 }
 
-.get ::after {
+.get_a_price .get::after {
     content: '';
     position: absolute;
     bottom: -30px;
     left: 0;
     border-style: solid;
-    border-width: 40px 40px 0 0;
+    border-width: 30px 30px 0 0;
     border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
 }
 
