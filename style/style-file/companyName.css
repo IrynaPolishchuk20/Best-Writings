@@ -28,7 +28,7 @@
 
 .companyName .things{
     height: 65px;
-    width: 600px;
+    width: 500px;
     background: var(--color_btn_read_more_hover);
     filter: drop-shadow(2px 3.464px 3.5px #95aeb6);
     display: flex;

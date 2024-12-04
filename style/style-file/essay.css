@@ -41,22 +41,22 @@
     width: 100px;
     margin-top: 5px;
 }
-.essay .elements .images{
+.essay .elements .element .images{
     position: relative;
 }
 
-.essay .elements .images .first-image{
+.essay .elements .element .images .first-image{
     position: absolute;
 }
 
-.essay .elements h4{
+.essay .element h4{
     text-align: center;
     line-height: 22px;
     font-weight: 500;
     flex: 0 0 50px;
 }
 
-.essay .elements p{
+.essay .element p{
     flex: 1;
     font-size: 16px;
     text-align: justify;
@@ -67,7 +67,7 @@
     margin-top: 0px;
    }
 
-.essay .elements ul{ 
+.essay .element ul{ 
     flex: 1;
     font-size: 16px; 
     color: var(--color_p_text);
@@ -76,14 +76,11 @@
     margin-top: 0px;
 }
 
-.essay .elements ul li::marker{
+.essay .element ul li::marker{
     font-size: 25px;
 }
 
-.essay .elements .element1,
-.essay .elements .element2,
-.essay .elements .element3,
-.essay .elements .element4{
+.essay .elements .element{
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -92,10 +89,7 @@
     flex: 1;
 }
 
-.essay .elements .element1 button,
-.essay .elements .element2 button,
-.essay .elements .element3 button,
-.essay .elements .element4 button{
+.essay .elements .element button{
     width: 120px;
     height: 35px;
     background: var(--color_btn_read_more);
@@ -109,37 +103,26 @@
     font-family: Roboto_Regular;
     text-align: center;
 }
-.essay .elements .element1 button:hover,
-.essay .elements .element2 button:hover,
-.essay .elements .element3 button:hover,
-.essay .elements .element4 button:hover{
+
+.essay .elements .element button:hover{
     background: var(--color_btn_read_more_hover);
     transition: transform 1s ease;
     cursor: pointer;
 }
 
-.essay .elements .element1:hover .first-image,
-.essay .elements .element2:hover .first-image,
-.essay .elements .element3:hover .first-image,
-.essay .elements .element4:hover .first-image{
+.essay .elements .element:hover .first-image{
     opacity: 0;
 }
 
-.essay .elements .element1:hover,
-.essay .elements .element2:hover,
-.essay .elements .element3:hover,
-.essay .elements .element4:hover{
+.essay .elements .element:hover{
     filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
     background-color: #ffffff;
-    height: 530px;
     position: relative;
     transition: transform 1s ease;
     cursor: pointer;
 }
-.essay .elements .element1::after,
-.essay .elements .element2::after,
-.essay .elements .element3::after,
-.essay .elements .element4::after{
+
+.essay .elements .element::after{
     content: '';
     position: absolute;
     bottom: -30px;
@@ -148,3 +131,4 @@
     border-width: 30px 30px 0 0;
     border-color: #ffffff transparent transparent transparent;
 }
+
