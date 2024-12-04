@@ -2,7 +2,7 @@
     background: url(../../images/Bg1-1.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 310px;
+    height: 100%;
 }
 
 .essay .essay_writing{
@@ -124,7 +124,7 @@
 
 .essay .elements .element::after{
     content: '';
-    position: absolute;
+    position: relative;
     bottom: -30px;
     left: 0;
     border-style: solid;
@@ -132,3 +132,55 @@
     border-color: #ffffff transparent transparent transparent;
 }
 
+.elements .element_phone img{
+    height: 100px;
+    width: 100px;
+}
+
+.essay.elements .element_phone_text ul{
+    flex: 1;
+    font-size: 16px; 
+    color: var(--color_p_text);
+    margin-left: -20px;
+    font-family: Arial;
+    margin-top: 0px;
+}
+
+.essay .elements .element_phone_text{
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: #ffffff;
+    position: relative;
+    width: 500px;
+    margin-top: 30px;  
+}
+
+.essay .elements .element_phone_text{
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    background-color: #ffffff;
+    position: relative;
+    width: 500px;
+    margin-top: 30px;  
+}
+
+
+
+.essay .elements .element_phone_text button{
+    width: 120px;
+    height: 35px;
+    background: var(--color_btn_read_more);
+    border: var(--color_btn_read_more);
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    text-align: center;
+}
+
+.essay .elements .element_phone_text button:hover{
+    background: var(--color_btn_read_more_hover);
+    transition: transform 1s ease;
+    cursor: pointer;
+}
