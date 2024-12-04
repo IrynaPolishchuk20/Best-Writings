@@ -12,16 +12,22 @@
     <header class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-8 phone">
+                <div class="d-none d-lg-flex col-xl-8 col-lg-12 phone">
                     <span>Sales toll free: <a href="">1 (044) 121-0506</a></span>
                     <span>Support toll free: <a href=""> 1 (044) 121-0507</a></span>
                 </div>
 
-                <div class="col-4 login_and_chat">
+                <div class="d-none col-xl-4 d-xl-flex login_and_chat">
                     <a href="#" class="login">Login</a>
                     <a href="#" class="live_chat">Live Chat</a>
-
                 </div>
+                <div class="d-xl-none d-lg-none d-md-flex d-sm-flex logo_bestwriting">
+                    <div class="col-lg-6 logo">
+                        <a href="#"><img src="./images/Logo_mobile_2.svg" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-6 menu">
+                        <a href="#"><img src="./images/Rectangle.png" alt="menu"></a>
+                    </div>
             </div>
         </div>
     </header>
@@ -29,7 +35,7 @@
     <nav class="container-fluid">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-xl-12 d-lg-none d-xl-block d-md-none d-sm-none d-none">
                 <ul>
                     <li><a href="#">home</a></li>
                     <li><a href="#">about</a></li>
@@ -42,6 +48,17 @@
                     <li><a href="#">blog</a></li>
                 </ul>
             </div>
+            <div class="col-lg-2 d-xl-none d-md-none d-sm-none d-none d-lg-flex">
+                <a href="#"><img src="./images/Rectangle.png" alt="menu"></a>
+            </div>
+            <div class="col-lg-10 d-xl-none d-md-none d-sm-none d-none d-lg-flex login_and_chat">
+                <a href="#" class="login">Login</a>
+                <a href="#" class="live_chat">Live Chat</a>
+            </div>
+            <div class="d-xl-none d-lg-none d-md-flex phone">
+                <span>Sales toll free: <a href="#">1 (877) 894-0925</a></span>
+                <span>Support toll free: <a href="#">1 (888) 901-8317</a></span>
+            </div>
         </div>
     </div>
     </nav>
@@ -49,17 +66,15 @@
     <div class="container-fluid company">
         <div class="container companyName">
             <div class="row">
-                <div class="col-6">
-                    <div class="logo">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="d-none d-xl-flex d-lg-flex logo">
                         <a href=""><img src="./images/Logo.svg" alt=""></a> 
                     </div>
                 </div>
                     <div class="row">
-                        <div class="col-6 things">
+                        <div class="col-xl-6 col-lg-8 things">
                             <h1>Things go Better with Us!</h1>
                         </div>
-                            <div class="row">
-                                <div class="col-6 text">
                                     <h3>What we offer you:</h3>
                                     <ul>
                                         <li>A dedicated writer who is qualified in your field</li>
@@ -68,8 +83,11 @@
                                         <li>A flawless end product in terms of style and grammar</li>
                                     </ul>
                                 </div>
+                                <div class="d-lg-none procent">
+                                    <h2>15 <span>% off</span> <p>YOUR FIRST ORDER</p></h2>
+                                </div>
                                 <div class="row">
-                                    <div class="col-6 left">
+                                    <div class="col-lg-6 left">
                                         <button>Essays & Research Papers</button>
                                         <button>Dissertations & Thesess</button>
                                         <button>Resumes & CVs</button>
@@ -87,9 +105,9 @@
             <div class="row">
                 <div class="col-12 get">
                     <h2>Get a price quote</h2>
-                    <div class="arrow">
-                        <img src="./images/Arrow.svg" alt="">
-                        <h3>15 <span>% off</span></h3>
+                    <img class="arrow d-none d-xl-flex d-lg-flex" src="./images/Arrow.svg" alt="">
+                    <div class="d-none d-xl-flex d-lg-flex procent">
+                        <h2>15 <span>% off</span></h2>
                         <p>YOUR FIRST ORDER</p>
                     </div>
                 </div>

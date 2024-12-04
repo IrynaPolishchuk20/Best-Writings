@@ -19,6 +19,12 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .company{
+        background: none;
+    }
+}
+
 
 .companyName .things{
     height: 65px;
@@ -41,7 +47,76 @@
     border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
 }
 
-.companyName .text h3{
+
+@media screen and (max-width: 992px) {
+    .company{
+        background: none;
+    }
+}
+.companyName a img{
+    margin: 10px 0px;
+}
+.companyName .logo{
+    display: flex;
+    align-items: center;
+}
+.companyName .logo img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+.companyName h2{
+    margin-top: 50px;
+    background-color: var(--color_btn_read_more_hover);
+    text-align: center;
+    width: 600px;
+    height: 65px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    display: flex;
+    align-items: center;
+}
+.companyName h2::before{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid var(--color_btn_read_more_hover);
+    border-right: 35px solid transparent;
+    position: relative;
+    top: 49px;
+}
+.companyName .procent h2{
+    font-size: 49px;
+    letter-spacing: -2px;
+    color: var(--color_btn_order_now);
+    font-weight: 700;
+    font-family: Roboto_Regular;
+}
+.companyName .procent span{
+    font-size: 37px;
+    color: var(--color_btn_order_now);
+    font-weight: 400;
+    font-family: Roboto_Medium;
+}
+
+.companyName .procent p{
+    font-size: 30px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #075da2;
+    font-weight: 400;
+    font-family: Roboto_Regular;
+    margin-left: 15px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .companyName h2{
+        width: 100%;
+    }
+}
+
+.companyName h3{
     margin: 35px 0px 0px;
 }
 
@@ -54,7 +129,7 @@
     position: relative;
 }
 
-.companyName .text ul li{
+.companyName ul li{
     font-size: 25px;;
     color: var(--color_p_text);
 }

@@ -59,7 +59,7 @@
     font-family: Roboto_Medium;
 } 
 
-.get_a_price .get p{
+.get_a_price .get .procent p{
     font-size: 22px;
     line-height: 20px;
     text-transform: uppercase;
@@ -69,10 +69,24 @@
     margin: 10px 0px 0px 10px;
 }
 
-.get_a_price  .get .arrow{
+.get_a_price  .get .procent{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.get_a_price .get .procent h2{
+    font-size: 49px;
+    letter-spacing: -2px;
+    color: var(--color_btn_order_now);
+    font-weight: 700;
+    font-family: Roboto_Regular;
+}
+
+.get_price .get .arrow{
+    position: absolute;
+    right: 400px;
+    width: 29px;
 }
 
 .get_a_price h4{
