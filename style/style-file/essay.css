@@ -31,11 +31,6 @@
     margin-top: 50px;
 }
 
-/* .essay .elements{
-    height: 540px;
-
-} */
-
 .essay .elements{
     display: flex; 
     justify-content: space-between; 
@@ -119,7 +114,6 @@
 .essay .elements .element3 button:hover,
 .essay .elements .element4 button:hover{
     background: var(--color_btn_read_more_hover);
-    transform: scale(1.03);
     transition: transform 1s ease;
     cursor: pointer;
 }
@@ -139,14 +133,13 @@
     background-color: #ffffff;
     height: 530px;
     position: relative;
-    transform: scale(1.03);
     transition: transform 1s ease;
     cursor: pointer;
 }
 .essay .elements .element1::after,
 .essay .elements .element2::after,
 .essay .elements .element3::after,
-.essay .elements .element4::after {
+.essay .elements .element4::after{
     content: '';
     position: absolute;
     bottom: -30px;

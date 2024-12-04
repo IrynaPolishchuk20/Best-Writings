@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    }
+}
 
 .companyName .things ::after {
     content: '';
@@ -53,6 +53,7 @@
         background: none;
     }
 }
+
 .companyName a img{
     margin: 10px 0px;
 }
@@ -63,7 +64,7 @@
 .companyName .logo img{
     margin-top: 30px;
     margin-bottom: 20px;
-    height: 100px;
+    height: 50px;
 }
 .companyName h2{
     margin-top: 50px;
@@ -110,6 +111,8 @@
 }
 
 
+
+
 @media screen and (max-width: 992px) {
     .companyName h2{
         width: 100%;
@@ -125,15 +128,14 @@
     font-size: 18px;
     line-height: 30px;
     color: var(--color_p_text);
-    font-family: Roboto_Medium;
+    font-family: Arial Narrow;
     position: relative;
 }
 
-.companyName ul li{
+.companyName .things ul li{
     font-size: 25px;;
     color: var(--color_p_text);
 }
-
 
 .companyName ul li::marker {
     font-size: 25px;
@@ -167,4 +169,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .companyName{
+        text-align: center;
+    }
+    .companyName .row .row{
+        display: inline-block;
+    }
 }
