@@ -51,7 +51,7 @@
     flex: 1;
 }
 
-.blocks_element .header_text {
+.blocks_element h4 {
     flex: 0 0 50px;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@
     text-align: center;
 }
 
-.blocks_element .main_text {
+.blocks_element p{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@
     position: relative;
 }
 
-.image .default-image{
+.image .first-image{
     position: absolute;
 }
 
@@ -122,8 +122,8 @@
     transition: transform 1s ease;
 }
 
-.blocks_element .element:hover .default-image,
-.image_phone .image:hover .default-image{
+.blocks_element .element:hover .first-image,
+.image_phone .image:hover .first-image{
     opacity: 0;
 }
 
