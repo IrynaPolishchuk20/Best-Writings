@@ -1,86 +1,48 @@
 .essay{
-    background: url(../../images/Bg1-1.svg);
+    background-image: url(../../images/Bg1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
 
-.essay .essay_writing{
-    margin-top: 10px;
-    height: 65px;
-    filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
+.essay h2{
     background-color: var(--color_btn_read_more_hover);
-    position: relative;
+    width: 100%;
+    height: 65px;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(56, 61, 63, 0.75));
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0px 20px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
 }
 
-.essay .essay_writing::after {
+.essay h2::before{
     content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid var(--color_btn_read_more_hover);
+    border-right: 35px solid transparent;
     position: absolute;
-    bottom: -30px;
+    top: 60px;
     left: 0;
-    border-style: solid;
-    border-width: 30px 30px 0 0;
-    border-color: var(--color_btn_read_more_hover) transparent transparent transparent;
 }
 
-.essay .text{
+.essay p{
     margin-top: 50px;
+    width: 100%;
+    font-family: Roboto_Bolt;
+    text-align: left;
 }
 
-.essay .elements{
+.blocks_element{
     display: flex; 
     justify-content: space-between; 
-    align-items: stretch;
-}
-.essay .elements img{
-    height: 100px;
-    width: 100px;
-    margin-top: 5px;
-}
-.essay .elements .element .images{
-    position: relative;
+    align-items: stretch; 
 }
 
-.essay .elements .element .images .first-image{
-    position: absolute;
-}
-
-.essay .element h4{
-    text-align: center;
-    line-height: 22px;
-    font-weight: 500;
-    flex: 0 0 50px;
-}
-
-.essay .element p{
-    flex: 1;
-    font-size: 16px;
-    text-align: justify;
-    font-family: Arial;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 0px;
-   }
-
-.essay .element ul{ 
-    flex: 1;
-    font-size: 16px; 
-    color: var(--color_p_text);
-    margin-left: -20px;
-    font-family: Arial;
-    margin-top: 0px;
-}
-
-.essay .element ul li::marker{
-    font-size: 25px;
-}
-
-.essay .elements .element{
+.blocks_element .element{
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -89,98 +51,140 @@
     flex: 1;
 }
 
-.essay .elements .element button{
-    width: 120px;
-    height: 35px;
-    background: var(--color_btn_read_more);
-    border: var(--color_btn_read_more);
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #ffffff;
-    border-radius: 5px;
-    font-weight: 400;
-    font-family: Roboto_Regular;
+.blocks_element .header_text {
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.essay .elements .element button:hover{
-    background: var(--color_btn_read_more_hover);
-    transition: transform 1s ease;
-    cursor: pointer;
-}
-
-.essay .elements .element:hover .first-image{
-    opacity: 0;
-}
-
-.essay .elements .element:hover{
-    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    background-color: #ffffff;
-    position: relative;
-    transition: transform 1s ease;
-    cursor: pointer;
-}
-
-.essay .elements .element::after{
-    content: '';
-    position: relative;
-    bottom: -30px;
-    left: 0;
-    border-style: solid;
-    border-width: 30px 30px 0 0;
-    border-color: #ffffff transparent transparent transparent;
-}
-
-.elements .element_phone img{
-    height: 100px;
-    width: 100px;
-}
-
-.essay.elements .element_phone_text ul{
+.blocks_element .main_text {
     flex: 1;
-    font-size: 16px; 
-    color: var(--color_p_text);
-    margin-left: -20px;
-    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.image{
+    position: relative;
+}
+
+.image .default-image{
+    position: absolute;
+}
+
+.image img{
+    width: 100px;
+    height: 100px;
+}
+
+.blocks_element .element h4
+.element_phone h4{
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.blocks_element .element p, ul{
+    font-size: 16px;
+    font-family:  Roboto_Bolt;
     margin-top: 0px;
 }
 
-.essay .elements .element_phone_text{
-    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    background-color: #ffffff;
-    position: relative;
-    width: 500px;
-    margin-top: 30px;  
-}
-
-.essay .elements .element_phone_text{
-    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    background-color: #ffffff;
-    position: relative;
-    width: 500px;
-    margin-top: 30px;  
-}
-
-
-
-.essay .elements .element_phone_text button{
+.blocks_element .element button,
+.element_phone button{
     width: 120px;
-    height: 35px;
-    background: var(--color_btn_read_more);
-    border: var(--color_btn_read_more);
+    height: 35px;   
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #ffffff;
     border-radius: 5px;
+    background-color: var(--color_btn_read_more);
+    color: var(--color_btn_text);
     font-weight: 400;
-    font-family: Roboto_Regular;
+    font-family: Roboto_Medium;
     text-align: center;
+    border: none;
 }
 
-.essay .elements .element_phone_text button:hover{
-    background: var(--color_btn_read_more_hover);
+.blocks_element .element button:hover,
+.element_phone button:hover{
+    background-color: var(--color_btn_read_more_hover);
+    color: var(--color_btn_text_hover);
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.blocks_element .element:hover{
+    background-color: #fff;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    transition: transform 1s ease;
+}
+
+.blocks_element .element:hover .default-image,
+.image_phone .image:hover .default-image{
+    opacity: 0;
+}
+
+.essay .element:hover::before{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 35px solid #fff;
+    border-right: 35px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
+.image_phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_phone img{
+    margin: 0px 10px;
+}
+
+.main_phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element_phone p{
+    line-height: 25px;
+    font-size: 16px;
+    font-family: Roboto_Bolt;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+.element_phone{
+    background-color: #fff;
+    filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
+    width: 250px;
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 35px;
+}
+.element_phone::before{
+    content: '';
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    top: -28px;
+    left: 90px;
+}
+
+.image_phone .image:hover{
     transition: transform 1s ease;
     cursor: pointer;
 }

@@ -75,8 +75,12 @@ header .logo{
     display: flex;
     align-items: center;
 }
-header .logo_bestwriting img{
+header .logo_bestwriting .logo img{
    height:  50px;
 }
+
+header .logo_bestwriting .menu img{
+    height: 25px;
+ }
 
 
