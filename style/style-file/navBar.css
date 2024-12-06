@@ -113,7 +113,7 @@ nav .phone{
     justify-content: flex-end;
 }
 nav .phone span, header .phone a{
-    font-size: 20px;
+    font-size: 18px;
     color: #caddea;
     font-weight: 250;
     font-family: Roboto_Regular;

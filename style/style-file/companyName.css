@@ -55,6 +55,7 @@
 @media screen and (max-width: 991px) {
     .baner h2{
         width: 100%;
+        font-size: 22px;
     }
 }
 .baner h3{
@@ -106,6 +107,9 @@
     .baner{
         text-align: center;
     }
+    .baner h2{
+        font-size: 20px;
+    }
     .baner .row .row{
         display: inline-block;
     }
@@ -120,14 +124,14 @@
     align-items: center;
 }
 .baner .container .procent h2{
-    font-size: 45px;
+    font-size: 28px;
     letter-spacing: -2px;
     color: var(--color_btn_order_now);
     font-weight: 700;
     font-family: Roboto_Regular;
 }
 .baner .container .procent span{
-    font-size: 35px;
+    font-size: 22px;
     color: var(--color_btn_order_now);
     font-weight: 400;
     font-family: Roboto_Medium;
@@ -135,7 +139,7 @@
     line-height: 30px;
 }
 .baner .container .procent p{
-    font-size: 30px;
+    font-size: 22px;
     line-height: 20px;
     text-transform: uppercase;
     color: #075da2;

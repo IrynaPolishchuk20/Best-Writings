@@ -12,7 +12,7 @@
 .order_paper h2{
     margin-top: 10px;
     height: 65px;
-    width: 95%;
+    width: 90%;
     filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
     background-color: var(--color_btn_read_more_hover);
     position: relative;
@@ -61,3 +61,14 @@
     border-radius: 50%;
 }
 
+@media screen and (max-width: 991px) {
+    .order_paper h2{
+        height: 130px;
+        font-size: 23px;
+        width: 85%;
+    }
+    
+    .order_paper h2::before{
+        top: 120px;
+    }
+}

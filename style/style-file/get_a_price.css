@@ -201,6 +201,10 @@
     .get_a_price   .container{
         text-align: center;
        }
+
+    .get_a_price h2{
+        font-size: 22px;
+       }
     .content2 .special{
         justify-content: center;
     }

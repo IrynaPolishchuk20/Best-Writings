@@ -196,12 +196,17 @@
         height: 75px;
     }    
 
+    .image{
+        margin-top: 15px;
+    }
+
     .element_phone::before{
         left: 70px;
     }
 
     .essay h2{
         height: 130px;
+        font-size: 23px;
     }
     
     .essay h2::before{
