@@ -135,7 +135,7 @@
     border-top: 35px solid #fff;
     border-right: 35px solid transparent;
     position: absolute;
-    bottom: -30px;
+    bottom: -28px;
     left: 0;
 }
 
@@ -206,5 +206,21 @@
     
     .essay h2::before{
         top: 120px;
+    }
+    .element_phone::before{
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .element_phone::before{
+        left: 0px;
+    }
+    .element_phone{
+        width: 200px;
+    }
+    .element_phone button{
+        width: 120px;
+        height: 45px; 
     }
 }
