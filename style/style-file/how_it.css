@@ -44,19 +44,12 @@
     color: #f4f6fa;
     clear: both;
 }
-.how{
+.how_it .how{
     width: 550px;
     height: 80px;
 }
 
 .how_it .how:hover{
-    /* font-size: 22px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Rajdhani";
-    position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,14 +57,19 @@
     transition: transform 1.05s ease;
 }
 
+.how_it .how:hover h4{
+    color: #ffffff;
+}
+
 .how_it .how:hover::before{
-        content: '';
-        display: inline-block;
-        border-top: 40px solid transparent;
-        border-left: 59px solid var(--color_btn_read_more);
-        border-bottom: 40px solid transparent;
-        position: relative;
-        left: 538px;
+    content: '';
+    display: inline-block;
+    border-top: 40px solid transparent;
+    border-left: 59px solid var(--color_btn_read_more);
+    border-bottom: 40px solid transparent;
+    position: relative;
+    left: 538px;
+    z-index: 1;
 }
 
 .how_it .text_how img{
@@ -89,17 +87,18 @@
 .how_it .text_how{
     background-color: #fff;
     filter: drop-shadow(2px 3.464px 3.5px rgba(155,182,190,0.75));
-    width: 450px;
+    width: 460px;
+    height: 415px;
     padding: 20px 50px;
-    text-align: center;
     margin-top: 35px;
     position: absolute;
-    left: 1005px; 
+    left: 980px; 
     display: none;
 }
 
 .how_it .how:hover .text_how{
     display: flex;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
 }
@@ -109,3 +108,31 @@
     align-items: center;
     justify-content: center;
 }
+
+/* @media screen and (max-width:320px){
+    .how_it h2{
+        font-size: 22px;
+        width: 85%;
+    }
+
+    .how{
+        width: 150px;
+        height: 80px;
+    }
+
+    .how_it h4{
+        font-size: 14px;
+    }
+
+    .how_it span{
+        font-size: 59px;
+        line-height: 51px;
+        text-transform: uppercase;
+        color: #caddea;
+        font-weight: 700;
+        font-family: "Rajdhani";
+        text-align: center;
+        padding: 10px;
+        float: left;
+    }
+} */

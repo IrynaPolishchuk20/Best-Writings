@@ -1,0 +1,39 @@
+.social{
+    height: 88px;
+    background-color: var(--color_btn_read_more_hover);
+}
+
+.social img{
+    margin-top: 10px;
+    height: 68px;
+    width: 100px;
+    padding: 0 5px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social  .img_pay{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.social .img_social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.social .img_social .image{
+    position: relative;
+}
+
+.social .img_social .image .first-image{
+    position: absolute;
+}
+.social .img_social .image:hover .first-image:hover{
+    opacity: 0;
+}

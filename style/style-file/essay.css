@@ -67,15 +67,15 @@
     text-align: justify;
 }
 
-.image{
+.blocks_element .image{
     position: relative;
 }
 
-.image .first-image{
+.blocks_element .image .first-image{
     position: absolute;
 }
 
-.image img{
+.blocks_element .image img{
     width: 100px;
     height: 100px;
 }
