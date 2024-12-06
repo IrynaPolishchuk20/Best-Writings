@@ -10,6 +10,7 @@
 
 .get_a_price .get{
     height: 65px;
+    width: 95%;
     filter: drop-shadow(2px 3.464px 3.5px rgba(2,68,121,0.75));
     background-color: var(--color_btn_read_more_hover);
     position: relative;
@@ -122,15 +123,10 @@
     display: flex;
     justify-content: space-around;
 }
-
-.get_a_price .content2 .total h2{
-    font-size: 48px;
-    color: var(--color_btn_text);
-    font-weight: 400;
-    font-family: Roboto_Regular;
+.content2 .special{
+    display: flex;
 }
-
-.get_a_price .content2 .total p{
+.content2 .special p{
     font-size: 16px;
     text-transform: uppercase;
     color: var(--color_btn_text);
@@ -138,47 +134,45 @@
     font-family: Roboto_Regular;
     margin-top: 70px;
 }
-
-.get_a_price .content2 .total span{
+.content2 .special h2{
+    font-size: 48px;
+    color: var(--color_btn_text);
+    font-weight: 400;
+    font-family: Roboto_Regular;
+}
+.content2 .special span{
     font-size: 25px;
 }
 
-.get_a_price .content2 .total {
-    display: flex;
-    justify-content: space-between;
+.special_block{
+    margin-top: 60px;
     width: 310px;
-    margin-right: 6px;
-}
-
-.get_a_price .order p{
+    height: 35px;
+    background: var(--color_btn_order_now);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     text-transform: uppercase;
     color: var(--color_btn_text);
     font-size: 26px;
     font-weight: 400;
     font-family: Roboto_Regular;
-    text-align: center;
 }
-
-.get_a_price .order{
-    margin-top: 30px;
-    margin-right: 6px;
-    width: 310px;
-    height: 35px;
-    background: var(--color_btn_order_now);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.get_a_price .order::after {
+.special_block::after{
     content: '';
     position: absolute;
     bottom: -15px;
-    left: 0px;
+    left: 0;
     border-style: solid;
     border-width: 20px 20px 0 0;
     border-color: var(--color_btn_order_now) transparent transparent transparent;
+}
+.special_block:hover{
+    background: var(--color_btn_order_now_hover)
+}
+.special_block:hover::after{
+    border-color: var(--color_btn_order_now_hover) transparent transparent transparent;
 }
 
 @media screen and (max-width: 1200px){
@@ -214,9 +208,12 @@
         display: flex;
         text-align: center;
     }
-    .content2 .order{
+
+    .content2 .special_block{
         margin-top: 0px;
     }
-
-    
+    .special_block {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

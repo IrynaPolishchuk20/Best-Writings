@@ -7,7 +7,7 @@
 
 .essay h2{
     background-color: var(--color_btn_read_more_hover);
-    width: 100%;
+    width: 95%;
     height: 65px;
     filter: drop-shadow(2px 3.464px 3.5px rgba(56, 61, 63, 0.75));
     display: flex;
@@ -181,10 +181,30 @@
     border-bottom: 30px solid #fff;
     position: absolute;
     top: -28px;
-    left: 90px;
+    left: 0;
 }
 
 .image_phone .image:hover{
     transition: transform 1s ease;
     cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+   
+   
+    .image img{
+        width: 75px;
+        height: 75px;
+    }    
+
+    .element_phone::before{
+        left: 70px;
+    }
+
+    .essay h2{
+        height: 130px;
+    }
+    
+    .essay h2::before{
+        top: 120px;
+    }
 }
