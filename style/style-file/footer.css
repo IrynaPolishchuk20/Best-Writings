@@ -4,16 +4,18 @@ footer{
     padding-top: 30px;
     padding-bottom: 20px;
 }
-footer .ulist ul li{
-    font-size: 17px;
+footer .ulist{
+    font-size: 18px;
     color: #caddea;
     font-family: Roboto_Bolt;
+
 }
 .img-fixed img{
     padding: 10px;
 }
 .cross{
     position: relative;
+    margin-top: 20px;
 }
 .cross::after{
     content: '';
